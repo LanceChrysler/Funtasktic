@@ -1,0 +1,22 @@
+/* Landing/Sign Up Page Designs */
+.SignUpForm input {
+    width: 90%;
+    height: 25px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background-color: #6C6A75;
+    color: white;
+}
+
+.SignUpForm input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.SignUpForm button {
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #B67EB7;
+    border-width: 0px;
+    color: white;
+}
