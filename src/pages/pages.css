@@ -1,22 +1,157 @@
 /* Landing/Sign Up Page Designs */
-.SignUpForm input {
-    width: 90%;
+.LandingPage .Body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/background_1.png);
+}
+
+.LandingPage .NavBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #11111150;
+}
+
+.LandingPage .NavBar button {
+    width: 20vh;
+    margin: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: #B67EB7;
+    border-width: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.LandingPage .Container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 100%;
+    color: white;
+}
+
+.LandingPage .Container .LandingMessage {
+    text-align: left;
+}
+
+.LandingPage .Container .SignUp .InputContainer {
+
+    background-color: #11111150;
+    width: 40vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.LandingPage .Container .SignUp .InputContainer .SignUpForm input {
+    width: 97%;
     height: 25px;
     font-size: 20px;
     margin-bottom: 15px;
     background-color: #6C6A75;
     color: white;
-}
-
-.SignUpForm input::placeholder {
-    color: white;
     opacity: 1;
+    float: left;
 }
 
-.SignUpForm button {
-    font-size: 20px;
+.LandingPage .Container .SignUp .InputContainer .SignUpForm input::placeholder {
+    color: white;
+    opacity: .5;
+}
+
+.LandingPage .Container .SignUp .InputContainer button {
+    font-size: 18px;
     border-radius: 10px;
     background-color: #B67EB7;
     border-width: 0px;
+    padding: 5px;
     color: white;
+}
+
+/* Log In Page Designs */
+.LogInPage .Body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/background_2.png);
+}
+
+.LogInPage .NavBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #11111150;
+}
+
+.LogInPage .NavBar button {
+    width: 20vh;
+    margin: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: #B67EB7;
+    border-width: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.LogInPage .Container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 100%;
+    color: white;
+}
+
+.LogInPage .Container .LogIn .InputContainer {
+
+    background-color: #11111150;
+    width: 40vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.LogInPage .Container .LogIn .InputContainer .LogInForm input {
+    width: 97%;
+    height: 25px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background-color: #6C6A75;
+    color: white;
+    opacity: 1;
+    float: left;
+}
+
+.LogInPage .Container .LogIn .InputContainer .LogInForm label {
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+
+.LogInPage .Container .LogIn .InputContainer .LogInForm input::placeholder {
+    color: white;
+    opacity: .5;
+}
+
+.LogInPage .Container .LogIn .InputContainer button {
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #B67EB7;
+    border-width: 0px;
+    padding: 5px;
+    color: white;
+    height: 5vh;
+    width: 15vh;
 }
