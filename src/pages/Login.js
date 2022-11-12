@@ -4,13 +4,17 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();
-  
+
   return (
     <div className="LogInPage">
       <div className="Body">
         <div className="NavBar">
-            <h2>Insert Logo Here</h2>
-            <button type="button" onClick={()=>  navigate(-1)}>Sign Up</button>
+            <div className="Navigations">
+              <div className="Logo" onClick={()=>  navigate(-1)}>
+                <img src={require("../images/funtasktic_logo.png")} alt="Funtasktic Logo"/>
+              </div>
+              <button type="button" onClick={()=>  navigate(-1)}>Sign Up</button>
+            </div>
         </div>
         <div className="Container">
             <div className="LogIn">
@@ -22,7 +26,7 @@ export default function Login() {
                         <label>Password</label>
                         <input type="password" placeholder="Password"/>
                     </form>
-                    <button type="submit">Log In</button>
+                    <button type="submit"  onClick={()=>  navigate("/u")}>Log In</button>
                 </div>
             </div>
         </div>

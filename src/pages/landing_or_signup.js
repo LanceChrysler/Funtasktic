@@ -1,6 +1,7 @@
 import React from 'react';
 import './pages.css';
 import {useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Landing_or_signup(props) {
   const navigate = useNavigate();
@@ -8,10 +9,14 @@ export default function Landing_or_signup(props) {
   return (
     <div className="LandingPage">
         <div className="Body">
-            <nav className="NavBar">
-                <h2>Insert Logo Here</h2>
-                <button type="button" onClick={()=>  navigate("/login")}>Log In</button>
-            </nav>
+            <div className="NavBar">
+                <div className="Navigations">
+                    <div className="Logo" >
+                        <img src={require("../images/funtasktic_logo.png")} alt="Funtasktic Logo"/>
+                    </div>
+                    <button type="button" onClick={()=>  navigate("/login")}>Log In</button>
+                </div>
+            </div>
             <div className="Container">
                 <div className="LandingMessage">
                     <h1>
