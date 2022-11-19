@@ -9,14 +9,14 @@ export default function Landing_or_signup(props) {
   return (
     <div className="LandingPage">
         <div className="Body">
-            <div className="NavBar">
+            <nav className="NavBar">
                 <div className="Navigations">
                     <div className="Logo" >
                         <img src={require("../images/funtasktic_logo.png")} alt="Funtasktic Logo"/>
                     </div>
                     <button type="button" onClick={()=>  navigate("/login")}>Log In</button>
                 </div>
-            </div>
+            </nav>
             <div className="Container">
                 <div className="LandingMessage">
                     <h1>

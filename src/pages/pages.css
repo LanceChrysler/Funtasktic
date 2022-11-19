@@ -17,27 +17,27 @@
     background-image: url(../images/background_1.png);
 }
 
-.LandingPage .Body .NavBar {
+.LandingPage .NavBar {
     background-color: #11111150;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     padding: 0 10px 0 10px;
-    height: 10%;
+    height: 10vh;
 }
 
-.LandingPage .Body .NavBar .Navigations {
+.LandingPage .Navigations {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.LandingPage .Body .NavBar .Navigations .Logo img {
+.LandingPage .Logo img {
     object-fit: contain;
     height: 5vh;
 }
 
-.LandingPage .Body .NavBar .Navigations button {
+.LandingPage .Navigations button {
     width: 10vw;
     font-size: clamp(1.25vw, 50%, 2vw);
     color: white;
@@ -47,7 +47,7 @@
     font-weight: bold;
 }
 
-.LandingPage .Body .Container {
+.LandingPage .Container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -56,15 +56,15 @@
     height: 90vh;
 }
 
-.LandingPage .Body .Container .LandingMessage {
+.LandingPage .LandingMessage {
     text-align: left;
 }
 
-.LandingPage .Body .Container .SignUp {
+.LandingPage .SignUp {
     text-align: center;
 }
 
-.LandingPage .Body .Container .SignUp .InputContainer {
+.LandingPage .InputContainer {
     background-color: #11111150;
     width: 40vh;
     border-radius: 20px;
@@ -73,7 +73,7 @@
     margin-bottom: -10px;
 }
 
-.LandingPage .Body .Container .SignUp .InputContainer .SignUpForm input {
+.LandingPage .SignUpForm input {
     width: fill;
     font-size: 14px;
     padding: 5px;
@@ -85,12 +85,12 @@
     border-radius: 5px;
 }
 
-.LandingPage .Body .Container .SignUp .InputContainer .SignUpForm input::placeholder {
+.LandingPage .SignUpForm input::placeholder {
     color: white;
     opacity: .5;
 }
 
-.LandingPage .Body .Container .SignUp .InputContainer button {
+.LandingPage .InputContainer button {
     background-color: #B67EB7;
     color: white;
     margin-top: -15px;
@@ -119,27 +119,27 @@
     background-image: url(../images/background_2.png);
 }
 
-.LogInPage .Body .NavBar {
+.LogInPage .NavBar {
     background-color: #11111150;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     padding: 0 10px 0 10px;
-    height: 10%;
+    height: 10vh;
 }
 
-.LogInPage .Body .NavBar .Navigations {
+.LogInPage .Navigations {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.LogInPage .Body .NavBar .Navigations .Logo img {
+.LogInPage .Logo img {
     object-fit: contain;
     height: 5vh;
 }
 
-.LogInPage .Body .NavBar .Navigations button {
+.LogInPage .Navigations button {
     width: 10vw;
     font-size: clamp(1.25vw, 50%, 2vw);
     color: white;
@@ -158,11 +158,11 @@
     color: white;
 }
 
-.LogInPage .Container .LogIn {
+.LogInPage .LogIn {
     text-align: center;
 }
 
-.LogInPage .Container .LogIn .InputContainer {
+.LogInPage .InputContainer {
 
     background-color: #11111150;
     width: 40vh;
@@ -170,7 +170,7 @@
     padding: 20px;
 }
 
-.LogInPage .Container .LogIn .InputContainer .LogInForm input {
+.LogInPage .LogInForm input {
     width: fill;
     font-size: 14px;
     padding: 5px;
@@ -182,18 +182,18 @@
     border-radius: 5px;
 }
 
-.LogInPage .Container .LogIn .InputContainer .LogInForm label {
+.LogInPage .LogInForm label {
     font-size: 20px;
     color: white;
     float: left;
 }
 
-.LogInPage .Container .LogIn .InputContainer .LogInForm input::placeholder {
+.LogInPage .LogInForm input::placeholder {
     color: white;
     opacity: .5;
 }
 
-.LogInPage .Container .LogIn .InputContainer button {
+.LogInPage .InputContainer button {
     font-size: 18px;
     border-radius: 10px;
     background-color: #B67EB7;
@@ -209,7 +209,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 /* Main Navbar Designs */
@@ -229,23 +229,23 @@
     width: 100%;
 }
 
-.MainNavBar .Navigations .Links {
+.MainNavBar .Links {
     display: flex;
     flex-direction: row;
     margin-right: 5vw;
     align-items: center;
 }
 
-.MainNavBar .Navigations .Links .Logo {
+.MainNavBar .Logo {
     margin-right: 5vw;
 }
 
-.MainNavBar .Navigations .Links .Logo img {
+.MainNavBar .Logo img {
     object-fit: contain;
     height: 5vh;
 }
 
-.MainNavBar .Navigations .Links .Tabs {
+.MainNavBar .Tabs {
     margin: 0 10px 0 10px;
     color: white;
     font-size: clamp(1.5vw, 50%, 2vw);
@@ -268,128 +268,122 @@
     width: 100%;
     object-fit: cover;
     display: flex;
+    flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-image: url(../images/background_3.png);
+    justify-content: center;
 }
 
 .MenuPage .WelcomeMessage {
-    padding: 35vh 0 0 10vh;
     color: grey;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 12vw;
+    font-size: clamp(1.5vw, 50%, 2.5vw);
 }
 
 /* Profile Designs */
 .ProfilePage {
-    height: auto;
+    height: 90%;
     width: 100%;
-    background-color: white;
+    background-color: #00000035;
+    overflow-y: hidden;
 }
 
 .ProfilePage .ProfileContainer {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden;
+    flex-flow: row wrap;
+    width: fill;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: center;
+    height: 35%;
+    width: 100%;
 }
 
-.ProfilePage .ProfileContainer .ProfileImage {
-    width: 15%;
-    height: 100%;
-    position: relative;
-}
-
-.ProfilePage .ProfileContainer .ProfileImage .ProfileImageContainer {
-    width: auto;
-    height: fill;
-    margin: 10px;
-    position: absolute;
-    object-fit: contain;
-}
-
-.ProfilePage .ProfileContainer .ProfileImage .LevelInProfile p {
-    width: clamp(10px, 50%, 25px);
-    height: clamp(10px, 50%, 25px);
-    margin: 22vh 0 0 11vw;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    background-color: grey;
-    text-align: center;
-    color: white;
-    border-radius: 100%;
-    position: relative;
-}
-
-.ProfilePage .ProfileContainer .ProfileImage .ProfileImageContainer img {
-    width: auto;
-    height: fill;
-    border-radius: 20px;
-}
-
-.ProfilePage .ProfileContainer .ProfileDetails1 {
+.ProfilePage .ProfileImage {
+    width: 190px;
+    height: 190px;
     display: flex;
-    width: 40%;
-    height: 100%;
-}
-
-.ProfilePage .ProfileContainer .ProfileDetails1 .Labels {
-    width: 20%;
-    height: 100%;
-}
-
-.ProfilePage .ProfileContainer .ProfileDetails1 .Informations {
-    width: 80%;
-    height: 100%;
-}
-
-.ProfilePage .ProfileContainer .ProfileDetails2 {
-    display: flex;
-    width: 40%;
-    height: 100%;
-}
-
-.ProfilePage .ProfileContainer .ProfileDetails2 .Labels {
-    width: 20%;
-    height: 100%;
-}
-
-.ProfilePage .ProfileContainer .ProfileDetails2 .Informations {
-    width: 80%;
-    height: 100%;
-}
-
-.ProfilePage .ProfileContainer .EditProfileDetails {
-    width: 5%;
-    height: 100%;
-}
-
-.ProfilePage .ProfileContainer .Label {
-    text-align: center;
+    justify-content: center;
     align-items: center;
-    background-color: #B972CD;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    height: 20px;
-    width: 5vw;
-    font-size: clamp(1vw, 50%, 2vw);
-    font-weight: bold;
+    position: relative;
 }
 
-.ProfilePage .ProfileContainer .Information {
-    text-align: justify;
-    font-size: clamp(1vw, 50%, 2vw);
-    padding: 5px;
+.ProfilePage .ProfileImage img {
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.ProfilePage .ProfileImage div {
+    background-color: gray;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ProfilePage .ProfileImage p {
+    font-size: 12.5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ProfilePage .ProfileDetailsContainer {
+    display: flex;
+    width: 85%;
+}
+
+.ProfilePage .ProfileDetails {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+}
+
+.ProfilePage .EditProfileDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 10%;
+    height: 100%;
+}
+
+.ProfilePage .ProfileInformation {
+    display: flex;
+    flex-direction: row;
+}
+
+.ProfilePage .Label {
+    background-color: #B972CD;
+    font-size: min(2vw, 14px);
+    height: fit-content;
     margin: 10px;
-    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    padding: 3px;
+}
+
+.ProfilePage .Information {
+    font-size: min(2vw, 12px);
+    margin: 10px;
+    padding: 3px;
+    align-items: center;
+    text-align: justify;
+    width: 85%;
 }
 
 .ProfilePage hr {
-    border-top: 2px dashed black;
+    border: 2px dashed black;
     width: 98%;
 }
 
@@ -397,9 +391,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 61.9%;
 }
 
-.ProfilePage .AccountStats .ProgressBarContainer {
+.ProfilePage .ProgressBarContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -407,64 +404,176 @@
     margin-bottom: 20px;
 }
 
-.ProfilePage .AccountStats .ProgressBarContainer .ProgressBarLabel {
+.ProfilePage .ProgressBarLabel {
     background-color: orange;
     padding: 5px 10px 5px 10px;
     font-weight: bold;
     border-radius: 20px;
-    margin: 0 10px 0 0;
+    margin-right: 10px;
 }
 
-.ProfilePage .AccountStats .ProgressBarContainer .ProgressBar {
+.ProfilePage .ProgressBar {
     background-color: blue;
     width: 50vw;
     border-radius: 30px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ProfilePage .UserStats {
     display: flex;
     flex-flow: row wrap;
-    width: 35vw;
+    width: 45vw;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.ProfilePage .UserStats .StatsDataContainer {
+.ProfilePage .StatsDataContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.ProfilePage .UserStats .StatsDataContainer .StatsDataLabel {
+.ProfilePage .StatsDataLabel {
     background-color: orange;
     padding: 5px 10px 5px 10px;
     font-weight: bold;
     border-radius: 20px;
 }
 
-.ProfilePage .UserStats .StatsDataContainer .StatsDataGraph {
+.ProfilePage .StatsDataGraph {
     background-color: blue;
     width: 200px;
     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ProfilePage .UserStats .TaskAnalysisContainer {
+.ProfilePage .TaskAnalysisContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.ProfilePage .UserStats .TaskAnalysisContainer .TaskAnalysisLabel {
+.ProfilePage .TaskAnalysisLabel {
     background-color: orange;
     padding: 5px 10px 5px 10px;
     font-weight: bold;
     border-radius: 20px;
 }
 
-.ProfilePage .UserStats .TaskAnalysisContainer .TaskAnalysisGraph {
+.ProfilePage .TaskAnalysisGraph {
     background-color: blue;
     width: 200px;
     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Task Page Designs*/
+.TaskPage {
+    height: 90%;
+    width: 100%;
+    background-color: #00000035;
+    display: flex;
+    flex-direction: row;
+}
+
+.TaskPage .LeftColumn {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.TaskPage .AddTaskForm {
+    height: 15%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.TaskPage .AddTaskForm ul {
+    margin: 10px 10px 10px 0;
+    list-style-type: circle;
+    font-size: 2vw;
+}
+
+.TaskPage .AddTaskForm input {
+    width: fill;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 5px;
+    background-color: #00000045;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TaskPage .AddTaskForm input::placeholder {
+    color: white;
+    opacity: .75;
+}
+
+.TaskPage .TaskList {
+    height: 85%;
+    margin: 10px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TaskPage .RightColumn {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.TaskPage .TaskInfo {
+    height: 55%;
+    margin: 10px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TaskPage .TaskArchive {
+    height: 45%;
+    margin: 10px;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Calendar Page Designs*/
+.CalendarPage {
+    height: 90%;
+    width: 100%;
+    background-color: #00000035;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.CalendarPage .CalendarContainer {
+    width: 63vw;
+    height: 42vw;
+    margin: 20px;
+    background-color: rgb(245, 181, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

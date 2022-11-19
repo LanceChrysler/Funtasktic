@@ -8,14 +8,14 @@ export default function Login() {
   return (
     <div className="LogInPage">
       <div className="Body">
-        <div className="NavBar">
+        <nav className="NavBar">
             <div className="Navigations">
               <div className="Logo" onClick={()=>  navigate(-1)}>
                 <img src={require("../images/funtasktic_logo.png")} alt="Funtasktic Logo"/>
               </div>
               <button type="button" onClick={()=>  navigate(-1)}>Sign Up</button>
             </div>
-        </div>
+        </nav>
         <div className="Container">
             <div className="LogIn">
                 <h1>Log In</h1>

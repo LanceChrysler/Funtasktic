@@ -17,7 +17,7 @@ export default function MainNavBar() {
                 </div>
                 <Link className="Tabs" to="profile">Profile</Link>
                 <Link className="Tabs" to="task">Task</Link>
-                <Link className="Tabs" to="/calendar">Calendar</Link>
+                <Link className="Tabs" to="calendar">Calendar</Link>
             </div>
             <button type="button" onClick={()=>  navigate("/")}>Log Out</button>
         </div>

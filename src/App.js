@@ -5,6 +5,8 @@ import LogInPage from './pages/Login';
 import MainLayout from './pages/MainLayout';
 import Menu from './pages/Menu';
 import Profile from './pages/Profile';
+import Task from './pages/Task';
+import Calendar from './pages/Calendar';
 
 /**
  * 
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/u" element={<MainLayout />}>
             <Route index element={<Menu />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="task" element={<Task />} />
+            <Route path="calendar" element={<Calendar />} />
           </Route>
         </Routes>
       </Router>
