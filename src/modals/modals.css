@@ -1,0 +1,54 @@
+.EditProfileModal .Header {
+    background-color: #B972CD;
+    border-radius: 15px;
+}
+
+.EditProfileModal .Header .Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.EditProfileModal .Body {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.EditProfileModal .Body .Form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.EditProfileModal .Body .Form label {
+    color: #55535B;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.EditProfileModal .Body .Form input {
+    background-color: #C4C4C4;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.EditProfileModal .Body .Form textarea {
+    background-color: #C4C4C4;
+    resize: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.EditProfileModal .Body .Button {
+    display: flex;
+    align-self: flex-end;
+}

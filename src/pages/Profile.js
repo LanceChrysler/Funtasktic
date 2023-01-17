@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MdEdit } from 'react-icons/md';
+import EditProfileModal from '../modals/Edit_Profile_Modal';
 
 export default function Profile() {
+  const [showEPM, setShowEPM] = useState(false);
+
   return (
     <div className="ProfilePage">
       <div className="ProfileContainer">
@@ -45,7 +48,7 @@ export default function Profile() {
             </div>
           </div>
           <div className="EditProfileDetails">
-            <MdEdit size="30" style={{margin: 10}} /> 
+              <MdEdit size="30" style={{margin: 10}} onClick={()=> {setShowEPM(true); console.log("Edit Icon Pressed")}} /> 
           </div>
         </div>
       </div>
@@ -72,6 +75,10 @@ export default function Profile() {
           </div>
         </div>
       </div>
+    <EditProfileModal
+      showEPM={showEPM}
+      setShowEPM={setShowEPM}
+    />
     </div>
   )
 }
