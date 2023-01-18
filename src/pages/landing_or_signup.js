@@ -1,7 +1,6 @@
 import React from 'react';
 import './pages.css';
 import {useNavigate} from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 export default function Landing_or_signup(props) {
   const navigate = useNavigate();
