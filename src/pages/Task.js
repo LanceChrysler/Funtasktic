@@ -7,6 +7,7 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
+import 'react-accessible-accordion/dist/fancy-example.css';
 import { MdEdit } from 'react-icons/md';
 import { RiDeleteBinLine } from 'react-icons/ri';
 
@@ -27,7 +28,7 @@ export default function Task() {
           </ul>
         </div>
         <div className="TaskList">
-          <Accordion style={{width: '100%'}} allowMultipleExpanded allowZeroExpanded="true">
+          <Accordion className="TaskListContainer" allowMultipleExpanded allowZeroExpanded="true">
             <AccordionItem className="TaskTypeContainer">
                 <AccordionItemHeading>
                     <AccordionItemButton className="TaskTypeHeader" style={{backgroundColor: '#BD3838'}}>
