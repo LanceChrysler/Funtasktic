@@ -6,6 +6,7 @@ import DifficultyModal from '../modals/Difficulty_Modal';
 import DescriptionModal from '../modals/Description_Modal';
 import TaskTypeModal from '../modals/Task_Type_Modal';
 import IncreaseXPModal from '../modals/Increase_XP_Modal';
+import AccumulatedStatModal from '../modals/Accumulated_Stat_Modal';
 
 
 /* This if for modal viewing only */
@@ -25,6 +26,8 @@ export default function Modals() {
   const [showTTM, setShowTTM] = useState(false);
   //State of Increase XP Modal
   const [showIXM, setShowIXM] = useState(false);
+  //State of Accumulated Stat Modal
+  const [showASM, setShowASM] = useState(false);
 
 
   return (
@@ -38,6 +41,7 @@ export default function Modals() {
             <button style={{marginTop: '10px'}} onClick={()=> setShowDeM(true)}>Show Description Modal</button>
             <button style={{marginTop: '10px'}} onClick={()=> setShowTTM(true)}>Show Task Type Modal</button>
             <button style={{marginTop: '10px'}} onClick={()=> setShowIXM(true)}>Show Increase XP Modal</button>
+            <button style={{marginTop: '10px'}} onClick={()=> setShowASM(true)}>Show Accumulated Stat Modal</button>
         </div>
         <EditProfileModal
             showEPM={showEPM}
@@ -66,6 +70,10 @@ export default function Modals() {
         <IncreaseXPModal
             showIXM={showIXM}
             setShowIXM={setShowIXM}
+        />
+        <AccumulatedStatModal
+            showASM={showASM}
+            setShowASM={setShowASM}
         />
     </>
   )

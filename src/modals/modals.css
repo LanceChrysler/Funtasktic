@@ -1,3 +1,4 @@
+/* Edit Profile Modal Designs */
 .EditProfileModal .Header {
     background-color: #B972CD;
     border-radius: 15px;
@@ -53,6 +54,7 @@
     align-self: flex-end;
 }
 
+/* Task Added Successfully Modal Designs */
 .TaskAddedSuccessfullyModal .Content {
     display: flex;
     flex-direction: row;
@@ -61,6 +63,7 @@
     font-weight: bold;
 }
 
+/* Task Completed Modal Designs */
 .TaskCompletedModal .Container {
     display: flex;
     flex-direction: column;
@@ -98,6 +101,7 @@
     background-color: #38BDA5;
 }
 
+/* Difficulty Modal Designs */
 .DifficultyModal .Header {
     background-color: #55535B;
     border-radius: 15px;
@@ -131,6 +135,7 @@
     padding: 10px;
 }
 
+/* Description Modal Designs */
 .DescriptionModal .Header {
     background-color: #55535B;
     border-radius: 15px;
@@ -160,6 +165,7 @@
     padding: 5px;
 }
 
+/* Task Type Modal Designs */
 .TaskTypeModal .Header {
     background-color: #55535B;
     border-radius: 15px;
@@ -209,6 +215,7 @@
     align-self: flex-end;
 }
 
+/* Increase XP Modal Designs */
 .IncreaseXPModal .Body {
     display: flex;
     padding: 10px;
@@ -238,4 +245,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Accumulateed Stat Modal Designs*/
+.AccumulatedStatModal .Content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
 }
