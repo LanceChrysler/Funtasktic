@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { IconButton, Button, Tooltip, Whisper } from "rsuite";
 import { Detail, Calendar, Time, Rate, Tag } from '@rsuite/icons'; // npm install rsuite @rsuite/icons
 import DescriptionModal from '../modals/Description_Modal';
 import DifficultyModal from '../modals/Difficulty_Modal';
 import TaskTypeModal from '../modals/Task_Type_Modal';
 import "rsuite/dist/rsuite.min.css";
+=======
+>>>>>>> fb78e788cd44fac436036874a2d7601feb370c13
 import "./pages.css";
 import {
     Accordion,
@@ -16,6 +19,7 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { MdEdit } from 'react-icons/md';
 import { RiDeleteBinLine } from 'react-icons/ri';
+<<<<<<< HEAD
 
 export default function Task() {
   const ButtonStyle = { margin: "0px 5px" };
@@ -23,6 +27,12 @@ export default function Task() {
   const [showDeM, setShowDeM] = useState(false);
   const [showDM, setShowDM] = useState(false);
   const [showTTM, setShowTTM] = useState(false);
+=======
+
+
+export default function Task() {
+  const [showButtons, setShowButtons] = useState(false);
+>>>>>>> fb78e788cd44fac436036874a2d7601feb370c13
   return (
     <div className="TaskPage">
       <div className="LeftColumn">
