@@ -91,7 +91,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #1</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -100,7 +100,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #2</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -118,7 +118,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #1</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -127,7 +127,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #2</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -145,7 +145,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #1</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -154,7 +154,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #2</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -172,7 +172,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #1</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -181,7 +181,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #2</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -199,7 +199,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #1</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -208,7 +208,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #2</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -226,7 +226,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #1</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
@@ -235,7 +235,7 @@ export default function Task() {
                       <div style={{display: 'flex', justifyContent: 'flex-start'}} onClick={()=> {showButtons ? setShowButtons(false) : setShowButtons(true)}}>
                         <label>Task #2</label>
                       </div>
-                      <div style={{display: 'flex', justifyContent: 'flex-end', display: showButtons ? 'block' : 'none'}}>
+                      <div style={{display: showButtons ? 'flex' : 'none', justifyContent: 'flex-end'}}>
                         <MdEdit size="30" />
                         <RiDeleteBinLine size="30" />
                       </div>
