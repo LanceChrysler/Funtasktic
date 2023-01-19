@@ -527,10 +527,69 @@
 .TaskPage .TaskList {
     height: 85%;
     margin: 10px;
-    background-color: green;
+    background-color: #ECE9E9;
+    border-radius: 15px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    overflow-y: auto;
+}
+
+.TaskPage .TaskList .TaskListContainer {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.TaskPage .TaskList .TaskListContainer .TaskTypeContainer {
+
+    border-radius: 10px;
+}
+
+.TaskPage .TaskList .TaskTypeContainer .TaskTypeHeader {
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+}
+
+.TaskPage .TaskList .TaskTypeContainer .TaskTypeHeader:before {
+    display: inline-block;
+    content: '';
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.TaskPage .TaskList .TaskTypeContainer .TaskTypeHeader[aria-expanded='true']::before,
+.TaskTypeHeaderButton[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.TaskPage .TaskList .TaskTypeContainer .TaskTypeList {
+    font-size: 16px;
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+.TaskPage .TaskList .TaskTypeContainer .TaskTypeList .TaskTypeListItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .TaskPage .RightColumn {

@@ -1,3 +1,4 @@
+/* Edit Profile Modal Designs */
 .EditProfileModal .Header {
     background-color: #B972CD;
     border-radius: 15px;
@@ -51,4 +52,205 @@
 .EditProfileModal .Body .Button {
     display: flex;
     align-self: flex-end;
+}
+
+/* Task Added Successfully Modal Designs */
+.TaskAddedSuccessfullyModal .Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Task Completed Modal Designs */
+.TaskCompletedModal .Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.TaskCompletedModal .Container .Title {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.TaskCompletedModal .Container .Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.TaskCompletedModal .Container .Buttons button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ECE9E9;
+}
+
+.TaskCompletedModal .Container .Buttons .No {
+    border-color: #BD3838;
+    background-color: #BD3838;
+}
+
+.TaskCompletedModal .Container .Buttons .Yes {
+    border-color: #38BDA5;
+    background-color: #38BDA5;
+}
+
+/* Difficulty Modal Designs */
+.DifficultyModal .Header {
+    background-color: #55535B;
+    border-radius: 15px;
+}
+
+.DifficultyModal .Header .Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.DifficultyModal .Body {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.DifficultyModal .Body .RatingContainer {
+    background-color: #E2DEDC;
+    border-radius: 24px;
+    padding: 5px;
+}
+
+.DifficultyModal .Footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Description Modal Designs */
+.DescriptionModal .Header {
+    background-color: #55535B;
+    border-radius: 15px;
+}
+
+.DescriptionModal .Header .Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.DescriptionModal .Body {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.DescriptionModal .Body .DescriptionInput {
+    margin-right: 30px;
+    resize: none;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Task Type Modal Designs */
+.TaskTypeModal .Header {
+    background-color: #55535B;
+    border-radius: 15px;
+}
+
+.TaskTypeModal .Header .Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.TaskTypeModal .Body {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.TaskTypeModal .Body .TagIcon {
+    color: #55535B;
+    align-self: flex-start;
+}
+
+.TaskTypeModal .Body .Tags {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.TaskTypeModal .Body .Tags button {
+    margin: 2px;
+    height: 50px;
+    width: 150px;
+    font-size: larger;
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.TaskTypeModal .Body .CheckIcon {
+    color: #55535B;
+    align-self: flex-end;
+}
+
+/* Increase XP Modal Designs */
+.IncreaseXPModal .Body {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.IncreaseXPModal .Body .ProgressBarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.IncreaseXPModal .Body .ProgressBarLabel {
+    background-color: orange;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.IncreaseXPModal .Body .ProgressBar {
+    background-color: blue;
+    border-radius: 30px;
+    width: 30vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Accumulateed Stat Modal Designs*/
+.AccumulatedStatModal .Content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
 }
