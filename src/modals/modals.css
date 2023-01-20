@@ -135,6 +135,34 @@
     padding: 10px;
 }
 
+/* Deadline Modal Designs */
+.DeadlineModal .Header {
+    background-color: #55535B;
+    border-radius: 15px;
+}
+
+.DeadlineModal .Header .Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.DeadlineModal .Body {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.DeadlineModal .Footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
 /* Description Modal Designs */
 .DescriptionModal .Header {
     background-color: #55535B;

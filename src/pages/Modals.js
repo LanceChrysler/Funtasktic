@@ -3,6 +3,7 @@ import EditProfileModal from '../modals/Edit_Profile_Modal';
 import TaskAddedSuccessfullyModal from '../modals/Task_Added_Successfully_Modal';
 import TaskCompletedModal from '../modals/Task_Completed_Modal';
 import DifficultyModal from '../modals/Difficulty_Modal';
+import DeadlineModal from '../modals/Deadline_Modal';
 import DescriptionModal from '../modals/Description_Modal';
 import TaskTypeModal from '../modals/Task_Type_Modal';
 import IncreaseXPModal from '../modals/Increase_XP_Modal';
@@ -20,6 +21,8 @@ export default function Modals() {
   const [showTCM, setShowTCM] = useState(false);
   //State of Difficulty Modal
   const [showDM, setShowDM] = useState(false);
+  //State of Deadline Modal
+  const [showDLM, setShowDLM] = useState(false);
   //State of Description Modal
   const [showDeM, setShowDeM] = useState(false);
   //State of Task Type Modal
@@ -38,6 +41,7 @@ export default function Modals() {
             <button style={{marginTop: '10px'}} onClick={()=> setShowTASM(true)}>Show Task Added Succesfully Modal</button>
             <button style={{marginTop: '10px'}} onClick={()=> setShowTCM(true)}>Show Task Completed Modal</button>
             <button style={{marginTop: '10px'}} onClick={()=> setShowDM(true)}>Show Difficulty Modal</button>
+            <button style={{marginTop: '10px'}} onClick={()=> setShowDLM(true)}>Show Deadline Modal</button>
             <button style={{marginTop: '10px'}} onClick={()=> setShowDeM(true)}>Show Description Modal</button>
             <button style={{marginTop: '10px'}} onClick={()=> setShowTTM(true)}>Show Task Type Modal</button>
             <button style={{marginTop: '10px'}} onClick={()=> setShowIXM(true)}>Show Increase XP Modal</button>
@@ -58,6 +62,10 @@ export default function Modals() {
         <DifficultyModal
             showDM={showDM}
             setShowDM={setShowDM}
+        />
+        <DeadlineModal
+            showDLM={showDLM}
+            setShowDLM={setShowDLM}
         />
         <DescriptionModal
             showDeM={showDeM}
