@@ -527,7 +527,7 @@
 
 .TaskPage .AddTaskButtons {
     display: flex;
-    width: 100vw;
+    width: auto;
     size: 1em;
     margin: 2.5px;
 }
