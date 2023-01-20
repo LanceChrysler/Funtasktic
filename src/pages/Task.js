@@ -25,16 +25,18 @@ export default function Task() {
   const [showDM, setShowDM] = useState(false);
   const [showTTM, setShowTTM] = useState(false);
   const [showTASM, setShowTASM] = useState(false);
+
   return (
     <div className="TaskPage">
       <div className="LeftColumn">
         <div className="AddTaskForm">
-            <ul>
-            <input type="text" className="AddTask" placeholder="Add Task" />
+          <ul>
+            <li><input type="text" className="AddTask" placeholder="Add Task" /></li>
+            <li>
               <div>
                 <Whisper followCursor speaker={<Tooltip>Description</Tooltip>}>
                   <IconButton icon={<Detail />} color="cyan" appearance="primary" style={ButtonStyle} 
-                    onClick={()=> {setShowDeM(true); console.log("Add Icon Pressed")}} />
+                    onClick={()=> setShowDeM(true)} />
                 </Whisper>
 
                 <Whisper followCursor speaker={<Tooltip>Deadline</Tooltip>}>
@@ -48,16 +50,16 @@ export default function Task() {
 
                 <Whisper followCursor speaker={<Tooltip>Difficulty</Tooltip>}>
                   <IconButton icon={<Rate />} color="yellow" appearance="primary" style={ButtonStyle}
-                    onClick={()=> {setShowDM(true); console.log("Add Icon Pressed")}} />
+                    onClick={()=> setShowDM(true)} />
                 </Whisper>
                 
                 <Whisper followCursor speaker={<Tooltip>Task Type</Tooltip>}>
                   <IconButton icon={<Tag />} color="blue" appearance="primary" style={ButtonStyle}
-                    onClick={()=> {setShowTTM(true); console.log("Add Icon Pressed")}} />
+                    onClick={()=> setShowTTM(true)} />
                 </Whisper>
 
-                <Button appearance="primary" color="orange" size="lg" style={{float: 'right'}}
-                  onClick={()=> {setShowTASM(true); console.log("Add Icon Pressed")}} >ADD</Button>
+                <Button appearance="primary" color="orange" size="lg" style={{float: 'right', marginTop: '10px'}}
+                  onClick={()=> setShowTASM(true)} >ADD</Button>
 
                 <DescriptionModal
                   showDeM={showDeM}
@@ -76,11 +78,12 @@ export default function Task() {
                   setShowTASM={setShowTASM}
                 />
               </div>
+            </li>
           </ul>
         </div>
         <div className="TaskList">
           <Accordion className="TaskListContainer" allowMultipleExpanded allowZeroExpanded="true">
-            <AccordionItem className="TaskTypeContainer">
+            <AccordionItem className="TaskTypeContainer" style={{border: '2px solid #BD3838'}}>
                 <AccordionItemHeading>
                     <AccordionItemButton className="TaskTypeHeader" style={{backgroundColor: '#BD3838'}}>
                         Fitness
@@ -107,7 +110,7 @@ export default function Task() {
                     </div>
                 </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem className="TaskTypeContainer">
+            <AccordionItem className="TaskTypeContainer" style={{border: '2px solid #8238BD'}}>
                 <AccordionItemHeading>
                     <AccordionItemButton className="TaskTypeHeader" style={{backgroundColor: '#8238BD'}}>
                         School
@@ -134,7 +137,7 @@ export default function Task() {
                     </div>
                 </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem className="TaskTypeContainer">
+            <AccordionItem className="TaskTypeContainer" style={{border: '2px solid #38BDA5'}}>
                 <AccordionItemHeading>
                     <AccordionItemButton className="TaskTypeHeader" style={{backgroundColor: '#38BDA5'}}>
                         Chores
@@ -161,7 +164,7 @@ export default function Task() {
                     </div>
                 </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem className="TaskTypeContainer">
+            <AccordionItem className="TaskTypeContainer" style={{border: '2px solid #BABD38'}}>
                 <AccordionItemHeading>
                     <AccordionItemButton className="TaskTypeHeader" style={{backgroundColor: '#BABD38'}}>
                         Health
@@ -188,7 +191,7 @@ export default function Task() {
                     </div>
                 </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem className="TaskTypeContainer">
+            <AccordionItem className="TaskTypeContainer" style={{border: '2px solid #BD3898'}}>
                 <AccordionItemHeading>
                     <AccordionItemButton className="TaskTypeHeader" style={{backgroundColor: '#BD3898'}}>
                         Social
@@ -215,7 +218,7 @@ export default function Task() {
                     </div>
                 </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem className="TaskTypeContainer">
+            <AccordionItem className="TaskTypeContainer" style={{border: '2px solid #BD7838'}}>
                 <AccordionItemHeading>
                     <AccordionItemButton className="TaskTypeHeader" style={{backgroundColor: '#BD7838'}}>
                         Work
@@ -247,10 +250,26 @@ export default function Task() {
       </div>
       <div className="RightColumn">
         <div className="TaskInfo">
-          [TaskInfo Placeholder]
+          INFO WILL BE DISPLAYED HERE
         </div>
         <div className="TaskArchive">
-          [TaskArchive Placeholder]
+          <Accordion className="TaskArchiveContainer" allowMultipleExpanded allowZeroExpanded="true">
+            <AccordionItem className="TaskArchiveListContainer">
+                <AccordionItemHeading>
+                    <AccordionItemButton className="TaskArchiveHeader" style={{backgroundColor: 'gray'}}>
+                        Archive
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="TaskArchiveList">
+                    <div className="TaskArchiveListItem">
+                      <div style={{display: 'flex', justifyContent: 'flex-start', flexDirection: 'column'}}>
+                        <label>Task #1</label>
+                        <label>Task #2</label>
+                      </div>
+                    </div>
+                </AccordionItemPanel>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
     </div>

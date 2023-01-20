@@ -69,12 +69,12 @@
     width: 40vh;
     border-radius: 20px;
     padding: 15px;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .LandingPage .SignUpForm input {
-    width: fill;
+    width: stretch;
     font-size: 14px;
     padding: 5px;
     margin-bottom: 15px;
@@ -168,10 +168,11 @@
     width: 40vh;
     border-radius: 20px;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .LogInPage .LogInForm input {
-    width: fill;
+    width: stretch;
     font-size: 14px;
     padding: 5px;
     margin-bottom: 15px;
@@ -295,7 +296,7 @@
 .ProfilePage .ProfileContainer {
     display: flex;
     flex-flow: row wrap;
-    width: fill;
+    width: stretch;
     overflow-y: auto;
     overflow-x: hidden;
     justify-content: center;
@@ -507,7 +508,7 @@
 }
 
 .TaskPage .AddTaskForm input {
-    width: fill;
+    width: stretch;
     font-size: 1.5vw;
     border-radius: 5px;
     border-width: 1px;
@@ -533,11 +534,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 10px;
-    background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px gray;
     overflow-y: auto;
+    box-shadow: 5px 5px 10px gray;
 }
 
 .TaskPage .TaskList .TaskListContainer {
@@ -548,6 +547,7 @@
 .TaskPage .TaskList .TaskListContainer .TaskTypeContainer {
 
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .TaskPage .TaskList .TaskTypeContainer .TaskTypeHeader {
@@ -560,7 +560,7 @@
     width: 100%;
     text-align: left;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .TaskPage .TaskList .TaskTypeContainer .TaskTypeHeader:before {
@@ -576,7 +576,7 @@
 }
 
 .TaskPage .TaskList .TaskTypeContainer .TaskTypeHeader[aria-expanded='true']::before,
-.TaskTypeHeaderButton[aria-selected='true']::before {
+.TaskTypeHeader[aria-selected='true']::before {
     transform: rotate(45deg);
 }
 
@@ -602,19 +602,74 @@
 .TaskPage .TaskInfo {
     height: 55%;
     margin: 10px;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
 }
 
 .TaskPage .TaskArchive {
     height: 45%;
     margin: 10px;
-    background-color: cyan;
     display: flex;
-    align-items: center;
     justify-content: center;
+    border-radius: 10px;
+}
+
+.TaskPage .TaskArchive .TaskArchiveContainer {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.TaskPage .TaskArchive .TaskArchiveContainer .TaskArchiveListContainer {
+
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.TaskPage .TaskArchive .TaskArchiveContainer .TaskArchiveHeader {
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 15px;
+}
+
+.TaskPage .TaskArchive .TaskArchiveContainer .TaskArchiveHeader:before {
+    display: inline-block;
+    content: '';
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.TaskPage .TaskArchive .TaskArchiveContainer .TaskArchiveHeader[aria-expanded='true']::before,
+.TaskArchiveHeader[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.TaskPage .TaskArchive .TaskArchiveContainer .TaskArchiveList {
+    font-size: 16px;
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+.TaskPage .TaskArchive .TaskArchiveContainer .TaskArchiveList .TaskArchiveListItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Calendar Page Designs*/
@@ -623,16 +678,16 @@
     width: 100%;
     background-color: #00000035;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .CalendarPage .CalendarContainer {
-    width: 63vw;
-    height: 42vw;
-    margin: 20px;
-    background-color: rgb(245, 181, 45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: stretch;
+    background-color: rgba(0, 0, 0, .5);
+    color: #E69A27;
+    border-radius: 25px;
+    padding: 10px;
+    overflow-y: scroll;
 }
