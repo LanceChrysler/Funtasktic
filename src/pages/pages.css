@@ -494,7 +494,7 @@
 }
 
 .TaskPage .AddTaskForm {
-    height: 15%;
+    height: 17.5%;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
@@ -523,6 +523,13 @@
 .TaskPage .AddTaskForm input::placeholder {
     color: white;
     opacity: .75;
+}
+
+.TaskPage .AddTaskButtons {
+    display: flex;
+    width: 100vw;
+    size: 1em;
+    margin: 2.5px;
 }
 
 .TaskPage .TaskList {
