@@ -11,7 +11,7 @@ export default function Calendar() {
     <div className="CalendarPage">
       <div className="CalendarContainer">
         <FullCalendar
-          height={'auto'}
+          contentHeight={'70vh'}
           expandRows={'true'}
           headerToolbar={{
             left: 'dayGridMonth,timeGridWeek,timeGridDay',
@@ -21,6 +21,8 @@ export default function Calendar() {
           navLinks={'true'}
           plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
           initialView={'dayGridMonth'}
+
+
           eventContent={renderEventContent}
           events={[{
             title: 'All Day Event',

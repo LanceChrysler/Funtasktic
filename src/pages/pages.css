@@ -333,6 +333,7 @@
 .ProfilePage .ProfileImage p {
     font-size: 12.5px;
     color: white;
+    margin-top: 10px;
     font-weight: bold;
     text-align: center;
 }
@@ -360,6 +361,7 @@
 .ProfilePage .ProfileInformation {
     display: flex;
     flex-direction: row;
+    color: black;
 }
 
 .ProfilePage .Label {
@@ -368,10 +370,10 @@
     height: fit-content;
     margin: 10px;
     text-align: center;
-    font-weight: bold;
     border-radius: 10px;
     width: 100px;
     padding: 3px;
+    font-weight: bolder;
 }
 
 .ProfilePage .Information {
@@ -414,7 +416,7 @@
 }
 
 .ProfilePage .ProgressBar {
-    background-color: blue;
+    background-color: white;
     width: 50vw;
     border-radius: 30px;
     height: 50px;
@@ -446,7 +448,7 @@
 }
 
 .ProfilePage .StatsDataGraph {
-    background-color: blue;
+    background-color: white;
     width: 200px;
     height: 200px;
     display: flex;
@@ -469,7 +471,7 @@
 }
 
 .ProfilePage .TaskAnalysisGraph {
-    background-color: blue;
+    background-color: white;
     width: 200px;
     height: 200px;
     display: flex;
@@ -494,7 +496,7 @@
 }
 
 .TaskPage .AddTaskForm {
-    height: 17.5%;
+    height: 15vh;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
@@ -502,14 +504,14 @@
 }
 
 .TaskPage .AddTaskForm ul {
-    margin: 10px 10px 10px 0;
+    margin: 10px 10px 10px 10px;
     list-style-type: circle;
-    font-size: 2vw;
+    font-size: 40px;
 }
 
 .TaskPage .AddTaskForm input {
     width: stretch;
-    font-size: 1.5vw;
+    font-size: 30px;
     border-radius: 5px;
     border-width: 1px;
     padding: 5px;
@@ -533,7 +535,7 @@
 }
 
 .TaskPage .TaskList {
-    height: 85%;
+    height: 85vh;
     margin: 10px;
     background-color: #ECE9E9;
     border-radius: 15px;
@@ -683,18 +685,60 @@
 .CalendarPage {
     height: 90%;
     width: 100%;
-    background-color: #00000035;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: #00000035;
 }
 
 .CalendarPage .CalendarContainer {
-    height: stretch;
-    background-color: rgba(0, 0, 0, .5);
+    width: 70vw;
+    border: 5px solid #E69A27;
     color: #E69A27;
     border-radius: 25px;
     padding: 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
+
+    --fc-small-font-size: .85em;
+    --fc-page-bg-color: #E69A27;
+    --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+    --fc-neutral-text-color: #808080;
+    --fc-border-color: #E69A27;
+
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #E69A27;
+    --fc-button-border-color: #E69A27;
+    --fc-button-hover-bg-color: #885b17;
+    --fc-button-hover-border-color: #815717;
+    --fc-button-active-bg-color: #815717;
+    --fc-button-active-border-color: #664412;
+
+    --fc-event-bg-color: #885b17;
+    --fc-event-border-color: #885b17;
+    --fc-event-text-color: #fff;
+    --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+
+    --fc-more-link-bg-color: #d0d0d0;
+    --fc-more-link-text-color: inherit;
+
+    --fc-event-resizer-thickness: 8px;
+    --fc-event-resizer-dot-total-width: 8px;
+    --fc-event-resizer-dot-border-width: 1px;
+
+    --fc-non-business-color: rgba(215, 215, 215, 0.3);
+    --fc-bg-event-color: rgb(143, 223, 130);
+    --fc-bg-event-opacity: 0.3;
+    --fc-highlight-color: rgba(188, 232, 241, 0.3);
+    --fc-today-bg-color: rgba(255, 220, 40, 0.15);
+    --fc-now-indicator-color: red;
+}
+
+.CalendarPage .CalendarContainer a {
+    color: #C4C4C4;
+}
+
+.CalendarPage .CalendarContainer table {
+
+    background-color: #55535B;
 }
