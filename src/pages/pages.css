@@ -496,25 +496,19 @@
 }
 
 .TaskPage .AddTaskForm {
-    height: 15vh;
+    padding: 10px;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px gray;
 }
 
-.TaskPage .AddTaskForm ul {
-    margin: 10px 10px 10px 10px;
-    list-style-type: circle;
-    font-size: 40px;
-}
-
 .TaskPage .AddTaskForm input {
     width: stretch;
-    font-size: 30px;
     border-radius: 5px;
     border-width: 1px;
     padding: 5px;
+    margin-bottom: 10px;
     background-color: #00000045;
     color: white;
     display: flex;
@@ -535,7 +529,7 @@
 }
 
 .TaskPage .TaskList {
-    height: 85vh;
+    height: stretch;
     margin: 10px;
     background-color: #ECE9E9;
     border-radius: 15px;

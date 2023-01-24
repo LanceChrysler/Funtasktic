@@ -32,41 +32,37 @@ export default function Task() {
     <div className="TaskPage">
       <div className="LeftColumn">
         <div className="AddTaskForm">
-          <ul>
-            <li><input type="text" className="AddTask" placeholder="Add Task" /></li>
-            <li>
-            <div className="AddTaskButtons" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-                <div>
-                  <Whisper followCursor speaker={<Tooltip>Description</Tooltip>}>
-                    <IconButton icon={<Detail />} color="cyan" appearance="primary" style={ButtonStyle} 
-                      onClick={()=> setShowDeM(true)} />
-                  </Whisper>
+        <input type="text" className="AddTask" placeholder="Add Task" />
+        <div className="AddTaskButtons" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+            <div>
+              <Whisper followCursor speaker={<Tooltip>Description</Tooltip>}>
+                <IconButton icon={<Detail />} color="cyan" appearance="primary" style={ButtonStyle} 
+                  onClick={()=> setShowDeM(true)} />
+              </Whisper>
 
-                  <Whisper followCursor speaker={<Tooltip>Deadline</Tooltip>}>
-                    <IconButton icon={<Calendar />} color="green" appearance="primary" style={ButtonStyle}
-                      onClick={()=> setShowDLM(true)} />
-                  </Whisper>
-                  
-                  <Whisper followCursor speaker={<Tooltip> </Tooltip>}>
-                    <IconButton icon={<Time />} color="violet" appearance="primary" style={ButtonStyle} />
-                  </Whisper>
+              <Whisper followCursor speaker={<Tooltip>Deadline</Tooltip>}>
+                <IconButton icon={<Calendar />} color="green" appearance="primary" style={ButtonStyle}
+                  onClick={()=> setShowDLM(true)} />
+              </Whisper>
+              
+              <Whisper followCursor speaker={<Tooltip> </Tooltip>}>
+                <IconButton icon={<Time />} color="violet" appearance="primary" style={ButtonStyle} />
+              </Whisper>
 
-                  <Whisper followCursor speaker={<Tooltip>Difficulty</Tooltip>}>
-                    <IconButton icon={<Rate />} color="yellow" appearance="primary" style={ButtonStyle}
-                      onClick={()=> setShowDM(true)} />
-                  </Whisper>
-                  
-                  <Whisper followCursor speaker={<Tooltip>Task Type</Tooltip>}>
-                    <IconButton icon={<Tag />} color="blue" appearance="primary" style={ButtonStyle}
-                      onClick={()=> setShowTTM(true)} />
-                  </Whisper>
-                </div>
-                <div>
-                  <Button appearance="primary" color="orange" size="lg" onClick={()=> setShowTASM(true)} >ADD</Button>
-                </div>
-              </div>
-            </li>
-          </ul>
+              <Whisper followCursor speaker={<Tooltip>Difficulty</Tooltip>}>
+                <IconButton icon={<Rate />} color="yellow" appearance="primary" style={ButtonStyle}
+                  onClick={()=> setShowDM(true)} />
+              </Whisper>
+              
+              <Whisper followCursor speaker={<Tooltip>Task Type</Tooltip>}>
+                <IconButton icon={<Tag />} color="blue" appearance="primary" style={ButtonStyle}
+                  onClick={()=> setShowTTM(true)} />
+              </Whisper>
+            </div>
+            <div>
+              <Button appearance="primary" color="orange" size="lg" onClick={()=> setShowTASM(true)} >ADD</Button>
+            </div>
+          </div>
         </div>
         <div className="TaskList">
           <Accordion className="TaskListContainer" allowMultipleExpanded allowZeroExpanded="true">
