@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IconButton, Button, Tooltip, Whisper } from "rsuite"; // npm i rsuite --save
-import { Detail, Calendar, Time, Rate, Tag } from '@rsuite/icons'; // npm install rsuite @rsuite/icons
+import { Detail, Calendar, Rate, Tag } from '@rsuite/icons'; // npm install rsuite @rsuite/icons
 import DescriptionModal from '../modals/Description_Modal';
 import DeadlineModal from '../modals/Deadline_Modal';
 import DifficultyModal from '../modals/Difficulty_Modal';
@@ -36,17 +36,13 @@ export default function Task() {
         <div className="AddTaskButtons" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
             <div>
               <Whisper followCursor speaker={<Tooltip>Description</Tooltip>}>
-                <IconButton icon={<Detail />} color="cyan" appearance="primary" style={ButtonStyle} 
+                <IconButton icon={<Detail />} color="violet" appearance="primary" style={ButtonStyle} 
                   onClick={()=> setShowDeM(true)} />
               </Whisper>
 
               <Whisper followCursor speaker={<Tooltip>Deadline</Tooltip>}>
                 <IconButton icon={<Calendar />} color="green" appearance="primary" style={ButtonStyle}
                   onClick={()=> setShowDLM(true)} />
-              </Whisper>
-              
-              <Whisper followCursor speaker={<Tooltip> </Tooltip>}>
-                <IconButton icon={<Time />} color="violet" appearance="primary" style={ButtonStyle} />
               </Whisper>
 
               <Whisper followCursor speaker={<Tooltip>Difficulty</Tooltip>}>
@@ -55,7 +51,7 @@ export default function Task() {
               </Whisper>
               
               <Whisper followCursor speaker={<Tooltip>Task Type</Tooltip>}>
-                <IconButton icon={<Tag />} color="blue" appearance="primary" style={ButtonStyle}
+                <IconButton icon={<Tag />} color="cyan" appearance="primary" style={ButtonStyle}
                   onClick={()=> setShowTTM(true)} />
               </Whisper>
             </div>
