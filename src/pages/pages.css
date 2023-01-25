@@ -419,7 +419,7 @@
     display: flex;
     flex-flow: row wrap;
     width: 60vw;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 20px;
 }
 
