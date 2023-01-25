@@ -9,7 +9,7 @@ export default function Deadline_Modal(props) {
     <Modal 
         className="DeadlineModal"
         isOpen={props.showDLM} 
-        onRequestClose={()=> props.setshowDLM(false)} 
+        onRequestClose={()=> props.setShowDLM(false)} 
         style={{
             overlay: {
                 position: 'fixed',
@@ -38,7 +38,7 @@ export default function Deadline_Modal(props) {
         <div className="Header">
             <div className="Title">
                 <label>Deadline</label>
-                <AiFillCloseCircle style={{color: "#55535B"}} size="30" onClick={()=> props.setShowDLM(false)} /> 
+                <AiFillCloseCircle style={{color: "#ECE9E9"}} size="30" onClick={()=> props.setShowDLM(false)} /> 
             </div>
         </div>
         <div className="Body">
