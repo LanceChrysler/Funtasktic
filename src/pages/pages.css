@@ -505,6 +505,7 @@
 
 .TaskPage .AddTaskForm input {
     width: stretch;
+    font-size: 18px;
     border-radius: 5px;
     border-width: 1px;
     padding: 5px;
