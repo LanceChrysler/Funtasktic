@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { DatePicker, Checkbox, CheckPicker } from 'rsuite';
 import { AiFillCloseCircle, AiFillCheckCircle }  from 'react-icons/ai';
 import './modals.css';
 
 export default function Deadline_Modal(props) {
-    const [showSelect, setShowSelect] = React.useState(false);
+    const [isRepeating, setIsRepeating] = useState(false);
+    const repeating = false;
     const data = [
         'Everyday',
         'Monday',
@@ -38,7 +39,6 @@ export default function Deadline_Modal(props) {
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
                 width: '350px',
-                height: '250px',
                 background: '#ECE9E9',
                 overflow: 'auto',
                 WebkitOverflowScrolling: 'touch',
@@ -53,15 +53,13 @@ export default function Deadline_Modal(props) {
                 <AiFillCloseCircle style={{color: "#ECE9E9"}} size="30" onClick={()=> props.setShowDLM(false)} /> 
             </div>
         </div>
-        <div className="Body" style={{display: "block"}}>
-            <>       
+        <div className="Body">
+            Repeating task? <Checkbox onChange={() => setIsRepeating(isRepeating ? false : true)}>Yes</Checkbox>
+            <div style={{display: isRepeating ? 'block' : 'none'}}>       
                 <DatePicker placeholder="Select Date" className="AddDeadline" style={{ width: 200 }} />
-            </>
-            <div className="RepeatingTask" style={{display: "block"}}>
-                Repeating task? <Checkbox onClick={() => setShowSelect(!showSelect)}>{showSelect ? '' : 'Yes'}</Checkbox>
-                {showSelect && <div>
-                    <CheckPicker data={data} style={{ width: 200 }} /> 
-                </div>}
+            </div>
+            <div style={{display: isRepeating ? 'none' : 'block'}}>
+                <CheckPicker data={data} style={{ width: 200 }} /> 
             </div>
         </div>
         <div className="Footer">
