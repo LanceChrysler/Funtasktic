@@ -152,7 +152,7 @@
 }
 
 .DeadlineModal .Body {
-    display: flex;
+    display: block;
     padding: 10px;
     flex-direction: row;
 }
