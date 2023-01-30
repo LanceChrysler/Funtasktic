@@ -282,3 +282,20 @@
     padding: 10px;
     font-weight: bold;
 }
+
+/* Friend Request Modal Designs */
+.RequestAcceptedSuccessfullyModal .Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.RequestRejectedSuccessfullyModal .Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+}

@@ -6,6 +6,7 @@ import Menu from './pages/Menu';
 import Profile from './pages/Profile';
 import Task from './pages/Task';
 import Calendar from './pages/Calendar';
+import Friends from './pages/Friends';
 import Modals from './pages/Modals';
 
 /**
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="profile" element={<Profile />} />
             <Route path="task" element={<Task />} />
             <Route path="calendar" element={<Calendar />} />
+            <Route path="friends" element={<Friends />} />
             <Route path="modals" element={<Modals />} />
           </Route>
         </Routes>
