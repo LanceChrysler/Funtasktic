@@ -420,7 +420,7 @@
     flex-flow: row wrap;
     width: 60vw;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .ProfilePage .StatsDataContainer {
@@ -469,6 +469,95 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.ProfilePage .Posts {
+    width: 60vw;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    margin-bottom: 30px;
+}
+
+.ProfilePage .Posts .CommentHeader {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ProfilePage .Posts .CommentHeader:before {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    background: grey;
+}
+
+.ProfilePage .Posts .CommentHeader:after {
+    content: " ";
+    height: 2px;
+    width: 50%;
+    background: grey;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+}
+
+.ProfilePage .Posts .Comment {
+    width: stretch;
+    padding: 10px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.ProfilePage .Posts .CommentAuthor {
+    color: #BD3838;
+    font-size: 22px;
+}
+
+.ProfilePage .Posts .CommentText {
+    color: black;
+    font-size: 22px;
+}
+
+.ProfilePage .Posts .Reply {
+    width: stretch;
+    padding: 10px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.ProfilePage .Posts .CommentForm {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.ProfilePage .Posts .CommentFormInput {
+    border-radius: 10px;
+    width: 50vw;
+    height: 40px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.ProfilePage .Posts .CommentFormButton {
+    width: 150px;
+    background-color: rgba(85, 83, 91, 0.6);
+    color: #FFFBFB;
+    border-radius: 10px;
+    font-size: 22px;
 }
 
 /* Task Page Designs*/
@@ -755,7 +844,8 @@
     justify-content: left;
     background-color: white;
     box-shadow: 5px 5px 10px gray;
-} 
+    padding: 10px;
+}
 
 .FriendsPage .FriendsList ul {
     margin-top: 25px;
@@ -781,17 +871,25 @@
     color: white;
     background-color: #55535B;
     box-shadow: 5px 5px 10px gray;
-} 
+    padding: 10px;
+}
 
-.FriendsPage .FriendRequest ul {
+.FriendsPage .FriendRequest .Requests {
     margin-top: 25px;
     font-size: 25px;
     line-height: 2em;
     font-weight: bold;
     list-style-type: none;
+    width: stretch;
 }
 
-.FriendsPage .FriendRequest ul .Buttons {
+.FriendsPage .FriendRequest .Requests .Request {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.FriendsPage .FriendRequest .Requests .Buttons {
     align-content: right;
     margin: 2.5px;
 }
@@ -811,7 +909,7 @@
     text-align: center;
     background-color: white;
     box-shadow: 5px 5px 10px gray;
-} 
+}
 
 .FriendsPage .AddFriendsForm input {
     width: 80%;
