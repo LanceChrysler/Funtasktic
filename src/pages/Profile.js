@@ -4,7 +4,8 @@ import EditProfileModal from '../modals/Edit_Profile_Modal';
 import ProgressBar from "@ramonak/react-progress-bar";
 import DonutChart from 'react-donut-chart';
 import RadarChart from 'react-svg-radar-chart';
-import 'react-svg-radar-chart/build/css/index.css'
+import 'react-svg-radar-chart/build/css/index.css';
+import { Button, Comment, Form, Header } from 'semantic-ui-react';
 
 export default function Profile() {
   //State of Edit Profile Modal
@@ -141,6 +142,43 @@ export default function Profile() {
             </div>
           </div>
         </div>
+        <Comment.Group className="Posts">
+          <Header as='h5' className="CommentHeader">
+            POSTS
+          </Header>
+
+          <Comment>
+            <Comment.Content className="Comment">
+              <Comment.Author as='a' className="CommentAuthor">@Remmy</Comment.Author>
+              <Comment.Text className="CommentText">
+                Nice Stats Mew! When did you join Funtasktic???
+              </Comment.Text>
+              <Comment.Actions>
+                <Comment.Action>Comment</Comment.Action>
+              </Comment.Actions>
+            </Comment.Content>
+            <Comment.Group>
+              <Comment>
+                <Comment.Content className="Reply">
+                  <Comment.Author as='a' className="CommentAuthor">@MewSki2887</Comment.Author>
+                  <Comment.Text className="CommentText">
+                    I Just joind earlier this month xD
+                  </Comment.Text>
+                  <Comment.Actions>
+                    <Comment.Action>Comment</Comment.Action>
+                  </Comment.Actions>
+                </Comment.Content>
+              </Comment>
+            </Comment.Group>
+          </Comment>
+          
+          <Form reply className="CommentForm">
+            <Form.Field>
+              <input className="CommentFormInput" />
+            </Form.Field>
+            <Button className="CommentFormButton" content='Submit' />
+          </Form>
+        </Comment.Group>
       </div>
     <EditProfileModal
       showEPM={showEPM}

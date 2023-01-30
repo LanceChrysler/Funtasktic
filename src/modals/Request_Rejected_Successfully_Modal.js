@@ -37,7 +37,7 @@ export default function Request_Rejected_Successfully_Modal(props) {
     >
       <div className="Container">
         <div className="Content">
-            <label style={{color: "#BD3838", fontSize: "24px"}}>Friend Rejected successfully</label>
+            <label style={{color: "#BD3838", fontSize: "24px"}}>Rejected Friend Request</label>
             <AiFillCheckCircle style={{color: "#38BDA5"}} size="30" onClick={()=> props.setShowRRSM(false)} />
         </div>
       </div>

@@ -26,25 +26,33 @@ export default function Friends() {
         <h2 style={{margin: '5px 20px'}}>FRIEND REQUEST</h2>
         <div className="FriendRequest">
             <ul className="Requests">
-                <li>
+                <li className="Request">
                     <label>Ediiwow1</label>
-                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30"/>
-                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30"/>
+                    <div>
+                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30" onClick={()=> setShowRASM(true)}/>
+                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30" onClick={()=> setShowRRSM(true)}/>
+                    </div>
                 </li>
-                <li>
+                <li className="Request">
                     <label>Ediiwow2</label>
-                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30"/>
-                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30"/>
+                    <div>
+                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30" onClick={()=> setShowRASM(true)}/>
+                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30" onClick={()=> setShowRRSM(true)}/>
+                    </div>
                 </li>
-                <li>
+                <li className="Request">
                     <label>Ediiwow3</label>
-                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30"/>
-                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30"/>
+                    <div>
+                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30" onClick={()=> setShowRASM(true)}/>
+                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30" onClick={()=> setShowRRSM(true)}/>
+                    </div>
                 </li>
-                <li>
+                <li className="Request">
                     <label>Ediiwow4</label>
-                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30"/>
-                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30"/>
+                    <div>
+                        <AiFillCheckCircle className="Buttons" style={{ color: "00FF00" }} size="30" onClick={()=> setShowRASM(true)}/>
+                        <AiFillCloseCircle className="Buttons" style={{ color: "FF0000" }} size="30" onClick={()=> setShowRRSM(true)}/>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -66,13 +74,13 @@ export default function Friends() {
         </div>
       </div>
         <RequestAcceptedSuccessfullyModal
-        showTASM={showRASM}
-        setShowTASM={setShowRASM}
+        showRASM={showRASM}
+        setShowRASM={setShowRASM}
         />
 
         <RequestRejectedSuccessfullyModal
-        showTASM={showRRSM}
-        setShowTASM={setShowRRSM}
+        showRRSM={showRRSM}
+        setShowRRSM={setShowRRSM}
         />
       </div>
       
