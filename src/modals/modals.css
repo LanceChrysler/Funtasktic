@@ -268,7 +268,7 @@
 .IncreaseXPModal .Body .ProgressBar {
     background-color: blue;
     border-radius: 30px;
-    width: 30vw;
+    width: 20vw;
     height: 50px;
     display: flex;
     align-items: center;

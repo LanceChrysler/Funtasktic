@@ -1,9 +1,10 @@
 import React from 'react';
 import Modal from 'react-modal';
 import './modals.css';
+import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function Increase_XP_Modal(props) {
-    const sampleText = "UPDATE TEXT BACKEND";
+    const sampleText = "UPDATE THIS TEXT";
   return (
     <Modal
         className="IncreaseXPModal"
@@ -35,12 +36,17 @@ export default function Increase_XP_Modal(props) {
         }}
     >
         <div className="Body">
-            <label>{sampleText}</label>
+            <label style={{fontWeight: 'bolder', fontSize: '24px'}}>{sampleText}</label>
             <div className="ProgressBarContainer">
-                <p className="ProgressBarLabel">Progress Bar</p>
-                <div className="ProgressBar">
-                    [ProgressBar Placeholder]
-                </div>
+                <p className="ProgressBarLabel">Progress Bar :</p>
+                <ProgressBar
+                    width={'40vw'}
+                    height={'50px'}
+                    labelAlignment={'center'}
+                    baseBgColor={'#C4C4C4'}
+                    bgColor={'#5479FD'}
+                    completed={20}
+                />
             </div>
         </div>
     </Modal>

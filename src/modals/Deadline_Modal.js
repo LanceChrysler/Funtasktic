@@ -55,10 +55,10 @@ export default function Deadline_Modal(props) {
         </div>
         <div className="Body">
             Repeating task? <Checkbox onChange={() => setIsRepeating(isRepeating ? false : true)}>Yes</Checkbox>
-            <div style={{display: isRepeating ? 'block' : 'none'}}>       
+            <div style={{display: isRepeating ? 'none' : 'block'}}>       
                 <DatePicker placeholder="Select Date" className="AddDeadline" style={{ width: 200 }} />
             </div>
-            <div style={{display: isRepeating ? 'none' : 'block'}}>
+            <div style={{display: isRepeating ? 'block' : 'none'}}>
                 <CheckPicker data={data} style={{ width: 200 }} /> 
             </div>
         </div>
